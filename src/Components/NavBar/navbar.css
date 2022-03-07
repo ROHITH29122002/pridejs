@@ -38,7 +38,7 @@ button {
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  margin-left: 1.5rem;
+  margin-left: 2rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -54,7 +54,7 @@ button {
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
   margin: 1rem;
-  margin-left: 3rem;
+  margin-left: 1.5rem;
 }
 
 .pride_links:hover {
@@ -129,7 +129,7 @@ button {
   display: none;
   padding: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .courses a,
