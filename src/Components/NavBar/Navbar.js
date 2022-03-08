@@ -9,6 +9,7 @@ import arrow from './images/arrow.png'
 
 function Navbar() {
   const [showlinks,setshowlinks] =  useState(false)
+
   return (
     <>
     <div className="navbar">
@@ -17,15 +18,15 @@ function Navbar() {
         return !prevlinks
       })}><img src={menu} alt='menu'/></button>
       <div className="navlinks" id={showlinks ? "hidden" : ""}>
-      <div className="input_container">
+          <div className="pride_logo">
+            <img src={pridelogo} alt="logo" className="logo" />
+          </div>
+          <div className="input_container">
           <input type="text" placeholder="Search" className="nav_input" />
           <div className="search_container">
             <img className="search" src={pridesearch} alt="search" />
           </div>
         </div>
-          <div className="pride_logo">
-            <img src={pridelogo} alt="logo" className="logo" />
-          </div>
           <button>
             <a href="../../../public/index.html" className="pride_links">EVENTS</a>
           </button>
@@ -45,12 +46,11 @@ function Navbar() {
             className="courses_container"
           >
             <img className='arrow' src={arrow} alt='arrow'/>
-            <button>
-              <a href="../../../public/index.html"
-              id='courses'
-              className="pride_links">COURSES</a>
+            <button 
+            className="pride_links openlink"
+            >
+              COURSES
             </button>
-            
             <div className="courses">
               <a href="../../../public/index.html" className="course_list">COURSE LIST</a>
               <a href="../../../public/index.html" className="registration">REGISTRATION</a>
@@ -67,10 +67,10 @@ function Navbar() {
         className="aboutus_container"
         >
           <img className='arrow' src={arrow} alt='arrow'/>
-          <button>
-            <a href="../../../public/index.html" className="pride_links"
-            id='about_us'
-            >ABOUT US</a>
+          <button 
+          className="pride_links openlink"
+          >
+            ABOUT US
           </button>
           <div className="about_us">
             <a href="../../../public/index.html" className="partners">PARTNERS</a>

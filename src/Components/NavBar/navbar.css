@@ -4,6 +4,7 @@ a {
 }
 
 button {
+  color: #fff;
   background-color: transparent;
   border: 0;
   outline: 0;
@@ -59,7 +60,6 @@ button {
   font-size: 1.2rem;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
-  margin: 1rem;
   margin-left: 1.5rem;
 }
 
@@ -174,13 +174,14 @@ button {
 @media screen and (max-width: 800px) {
   .navbar {
     height: 40vh;
+    background-position-x: 30%;
   }
   .navleft,
   .navright {
     top: -6rem;
   }
   .open {
-    margin-left: 2rem;
+    margin-left: 4rem;
     display: flex;
   }
 
@@ -188,6 +189,12 @@ button {
     display: none;
   }
 
+  .openlink {
+    position: relative;
+    top: -1rem;
+    color: #fff;
+    height: 3rem;
+  }
   #hidden {
     position: absolute;
     left: 0rem;
@@ -202,17 +209,17 @@ button {
     padding-left: 3rem;
   }
 
-  #hidden .pride_logo {
-    display: none;
+  .pride_logo {
+    margin-left: 1rem;
   }
 
   .courses_container,
   .aboutus_container {
-    top: 0;
+    top: 0rem;
     left: 4rem;
     grid-template-rows: auto;
     grid-template-columns: repeat(3, auto);
-    column-gap: 1rem;
+    column-gap: 2rem;
   }
 
   .arrow {
@@ -223,8 +230,7 @@ button {
 
   .courses_container:hover,
   .aboutus_container:hover {
-    top: 0;
-    left: 6.7rem;
+    top: 3rem;
   }
 
   .courses_container:hover .pride_links,
@@ -237,7 +243,7 @@ button {
     width: 10rem;
     row-gap: 1rem;
     position: relative;
-    top: 2rem;
+    top: -1rem;
   }
 }
 
