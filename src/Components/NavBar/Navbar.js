@@ -4,6 +4,7 @@ import pridesearch from './images/pride_search.png'
 import pridelogo from './images/pridelogo.png'
 import user from './images/user.png'
 import menu from './images/menu1.png'
+import arrow from './images/arrow.png'
 
 
 function Navbar() {
@@ -43,11 +44,13 @@ function Navbar() {
             }}
             className="courses_container"
           >
+            <img className='arrow' src={arrow} alt='arrow'/>
             <button>
               <a href="../../../public/index.html"
               id='courses'
               className="pride_links">COURSES</a>
             </button>
+            
             <div className="courses">
               <a href="../../../public/index.html" className="course_list">COURSE LIST</a>
               <a href="../../../public/index.html" className="registration">REGISTRATION</a>
@@ -63,6 +66,7 @@ function Navbar() {
         }} 
         className="aboutus_container"
         >
+          <img className='arrow' src={arrow} alt='arrow'/>
           <button>
             <a href="../../../public/index.html" className="pride_links"
             id='about_us'

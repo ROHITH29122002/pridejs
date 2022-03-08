@@ -67,6 +67,10 @@ button {
   border-bottom: 2px solid rgb(35, 206, 63);
 }
 
+.arrow {
+  display: none;
+}
+
 .input_container {
   background-color: #fff;
   display: flex;
@@ -193,21 +197,28 @@ button {
     background-color: #2f2faf;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    padding: 1rem;
+    padding-left: 3rem;
   }
 
   #hidden .pride_logo {
     display: none;
   }
+
   .courses_container,
   .aboutus_container {
     top: 0;
-    left: 1.5rem;
+    left: 4rem;
     grid-template-rows: auto;
-    grid-template-columns: repeat(2, auto);
-    column-gap: 3rem;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 1rem;
+  }
+
+  .arrow {
+    width: 10px;
+    height: 10px;
+    display: flex;
   }
 
   .courses_container:hover,
@@ -225,6 +236,8 @@ button {
   .about_us {
     width: 10rem;
     row-gap: 1rem;
+    position: relative;
+    top: 2rem;
   }
 }
 
@@ -234,6 +247,5 @@ button {
   }
   .navlinks .input_container {
     display: flex;
-    margin-left: 2rem;
   }
 }
