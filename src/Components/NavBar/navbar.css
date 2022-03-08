@@ -112,10 +112,10 @@ button {
 .courses_container,
 .aboutus_container {
   position: relative;
-  top: 1.5rem;
+  top: 1rem;
   display: grid;
   grid-template-rows: repeat(2, auto);
-  row-gap: 3rem;
+  row-gap: 2rem;
 }
 
 .courses_container:hover,
