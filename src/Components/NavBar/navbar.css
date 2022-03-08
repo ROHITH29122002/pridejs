@@ -30,6 +30,12 @@ button {
   top: -3rem;
 }
 
+.navlinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .navright {
   margin-right: 3rem;
 }
@@ -69,6 +75,10 @@ button {
   border-radius: 15px;
   margin-right: 2rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.navlinks .input_container {
+  display: none;
 }
 
 .nav_input {
@@ -120,7 +130,7 @@ button {
 .courses,
 .about_us {
   width: 9rem;
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
   row-gap: 2rem;
   background-color: #fff;
   text-align: start;
@@ -140,4 +150,89 @@ button {
 .courses a:hover,
 .about_us a:hover {
   border-bottom: 2px solid rgb(35, 206, 63);
+}
+
+.open {
+  display: none;
+}
+
+.open img {
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .pride_links {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    height: 40vh;
+  }
+  .navleft,
+  .navright {
+    top: -6rem;
+  }
+  .open {
+    margin-left: 2rem;
+    display: flex;
+  }
+
+  .navlinks {
+    display: none;
+  }
+
+  #hidden {
+    position: absolute;
+    left: 0rem;
+    top: 4rem;
+    width: 100vw;
+    height: 60vh;
+    background-color: #2f2faf;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  #hidden .pride_logo {
+    display: none;
+  }
+  .courses_container,
+  .aboutus_container {
+    top: 0;
+    left: 1.5rem;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 3rem;
+  }
+
+  .courses_container:hover,
+  .aboutus_container:hover {
+    top: 0;
+    left: 6rem;
+  }
+
+  .courses_container:hover .pride_links,
+  .aboutus_container:hover .pride_links {
+    border-bottom: 2px solid rgb(35, 206, 63);
+  }
+
+  .courses,
+  .about_us {
+    width: 10rem;
+    row-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .input_container {
+    display: none;
+  }
+  .navlinks .input_container {
+    display: flex;
+    margin-left: 2rem;
+  }
 }
