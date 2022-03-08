@@ -205,6 +205,7 @@ button {
   .aboutus_container {
     top: 0;
     left: 1.5rem;
+    grid-template-rows: auto;
     grid-template-columns: repeat(2, auto);
     column-gap: 3rem;
   }
@@ -212,7 +213,7 @@ button {
   .courses_container:hover,
   .aboutus_container:hover {
     top: 0;
-    left: 6rem;
+    left: 6.7rem;
   }
 
   .courses_container:hover .pride_links,
