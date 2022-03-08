@@ -215,8 +215,6 @@ button {
 
   .courses_container,
   .aboutus_container {
-    top: 0rem;
-    left: 4rem;
     grid-template-rows: auto;
     grid-template-columns: repeat(3, auto);
     column-gap: 2rem;

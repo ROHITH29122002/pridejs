@@ -45,7 +45,7 @@ function Navbar() {
             }}
             className="courses_container"
           >
-            <img className='arrow' src={arrow} alt='arrow'/>
+
             <button 
             className="pride_links openlink"
             >
@@ -66,7 +66,6 @@ function Navbar() {
         }} 
         className="aboutus_container"
         >
-          <img className='arrow' src={arrow} alt='arrow'/>
           <button 
           className="pride_links openlink"
           >
