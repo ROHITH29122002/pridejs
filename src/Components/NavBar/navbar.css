@@ -11,6 +11,7 @@ button {
 }
 
 .navbar {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,10 +66,6 @@ button {
 
 .pride_links:hover {
   border-bottom: 2px solid rgb(35, 206, 63);
-}
-
-.arrow {
-  display: none;
 }
 
 .input_container {
@@ -181,7 +178,7 @@ button {
     top: -6rem;
   }
   .open {
-    margin-left: 4rem;
+    margin-left: 3.5rem;
     display: flex;
   }
 
@@ -220,12 +217,6 @@ button {
     column-gap: 2rem;
   }
 
-  .arrow {
-    width: 10px;
-    height: 10px;
-    display: flex;
-  }
-
   .courses_container:hover,
   .aboutus_container:hover {
     top: 3rem;
@@ -246,10 +237,7 @@ button {
 }
 
 @media screen and (max-width: 450px) {
-  .input_container {
-    display: none;
-  }
-  .navlinks .input_container {
-    display: flex;
+  .nav_input {
+    width: 12rem;
   }
 }

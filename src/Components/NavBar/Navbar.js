@@ -29,12 +29,6 @@ function Navbar() {
           <div className="pride_logo">
             <img src={pridelogo} alt="logo" className="logo" />
           </div>
-          <div className="input_container">
-          <input type="text" placeholder="Search" className="nav_input" />
-          <div className="search_container">
-            <img className="search" src={pridesearch} alt="search" />
-          </div>
-        </div>
           <button>
             <a href="../../../public/index.html" className="pride_links">EVENTS</a>
           </button>
