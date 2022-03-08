@@ -238,6 +238,6 @@ button {
 
 @media screen and (max-width: 450px) {
   .nav_input {
-    width: 12rem;
+    width: 15rem;
   }
 }
