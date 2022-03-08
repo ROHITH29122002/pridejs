@@ -4,7 +4,6 @@ import pridesearch from './images/pride_search.png'
 import pridelogo from './images/pridelogo.png'
 import user from './images/user.png'
 import menu from './images/menu1.png'
-import arrow from './images/arrow.png'
 
 
 function Navbar() {
@@ -13,11 +12,20 @@ function Navbar() {
   return (
     <>
     <div className="navbar">
-      <div className="navleft">
-      <button className='open' onClick={() => setshowlinks(prevlinks => {
+    <div className="navleft">
+      <button 
+      className='open' 
+      onClick=
+      {() => setshowlinks(prevlinks => {
         return !prevlinks
-      })}><img src={menu} alt='menu'/></button>
-      <div className="navlinks" id={showlinks ? "hidden" : ""}>
+      })}
+      >
+        <img src={menu} alt='menu'/>
+      </button>
+      <div 
+      className="navlinks" 
+      id={showlinks ? "hidden" : ""}
+      >
           <div className="pride_logo">
             <img src={pridelogo} alt="logo" className="logo" />
           </div>
@@ -45,7 +53,6 @@ function Navbar() {
             }}
             className="courses_container"
           >
-
             <button 
             className="pride_links openlink"
             >
@@ -58,18 +65,18 @@ function Navbar() {
             </div>
           </div>
           <div 
-        onMouseEnter={() =>{
-          document.querySelector('.about_us').style.display='grid';
-        }}
-        onMouseLeave={() => {
-          document.querySelector('.about_us').style.display='none';
-        }} 
-        className="aboutus_container"
-        >
-          <button 
-          className="pride_links openlink"
+            onMouseEnter={() =>{
+              document.querySelector('.about_us').style.display='grid';
+            }}
+            onMouseLeave={() => {
+              document.querySelector('.about_us').style.display='none';
+            }} 
+            className="aboutus_container"
           >
-            ABOUT US
+          <button 
+            className="pride_links openlink"
+          >
+              ABOUT US
           </button>
           <div className="about_us">
             <a href="../../../public/index.html" className="partners">PARTNERS</a>
@@ -77,14 +84,14 @@ function Navbar() {
             <a href="../../../public/index.html" className="course_list">COMMITTEE</a>
           </div>
         </div>
-        </div>  
-      </div>
-      <div className="navright">
-        <div className="input_container">
-          <input type="text" placeholder="Search" className="nav_input" />
-          <div className="search_container">
-            <img className="search" src={pridesearch} alt="search" />
-          </div>
+      </div>  
+    </div>
+    <div className="navright">
+      <div className="input_container">
+        <input type="text" placeholder="Search" className="nav_input" />
+        <div className="search_container">
+          <img className="search" src={pridesearch} alt="search" />
+        </div>
         </div>
         <div className="profile_container">
           <img className="profile" src={user} alt="user" />
