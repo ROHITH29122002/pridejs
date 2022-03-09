@@ -120,7 +120,7 @@ button {
 
 .courses_container:hover,
 .aboutus_container:hover {
-  top: 6.7rem;
+  top: 6.3rem;
 }
 
 .courses_container:hover .pride_links,
@@ -187,10 +187,7 @@ button {
   }
 
   .openlink {
-    position: relative;
-    top: -1rem;
     color: #fff;
-    height: 3rem;
   }
   #hidden {
     position: absolute;
@@ -212,6 +209,7 @@ button {
 
   .courses_container,
   .aboutus_container {
+    top: 0;
     grid-template-rows: auto;
     grid-template-columns: repeat(3, auto);
     column-gap: 2rem;
@@ -219,12 +217,12 @@ button {
 
   .courses_container:hover,
   .aboutus_container:hover {
-    top: 3rem;
+    top: 0rem;
   }
 
   .courses_container:hover .pride_links,
   .aboutus_container:hover .pride_links {
-    border-bottom: 2px solid rgb(35, 206, 63);
+    border-bottom: 0;
   }
 
   .courses,
