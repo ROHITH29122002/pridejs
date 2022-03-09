@@ -9,7 +9,6 @@ button {
   border: 0;
   outline: 0;
 }
-
 .navbar {
   position: relative;
   display: flex;
@@ -178,7 +177,7 @@ button {
     top: -6rem;
   }
   .open {
-    margin-left: 3.5rem;
+    margin-left: 5rem;
     display: flex;
   }
 
@@ -235,6 +234,9 @@ button {
 }
 
 @media screen and (max-width: 450px) {
+  .open {
+    margin-left: 4.5rem;
+  }
   .nav_input {
     width: 15rem;
   }

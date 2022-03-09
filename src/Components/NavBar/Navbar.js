@@ -7,13 +7,12 @@ import menu from './images/menu1.png'
 
 
 function Navbar() {
-  const [showlinks,setshowlinks] =  useState(false)
-
-
+  const [showlinks,setshowlinks] =  useState(true)
   return (
     <>
+    
     <div className="navbar">
-    <div className="navleft">
+     <div className="navleft">
       <button 
       className='open' 
       onClick=
@@ -49,9 +48,6 @@ function Navbar() {
             className="courses_container"
           >
             <button 
-            onClick ={(e) => {
-              console.log(e.target)
-            }}
             className="pride_links openlink"
             >
               COURSES
