@@ -7,7 +7,7 @@ import menu from './images/menu1.png'
 
 
 function Navbar() {
-  const [showlinks,setshowlinks] =  useState(true)
+  const [showlinks,setshowlinks] =  useState(false)
   return (
     <>
     
@@ -29,35 +29,6 @@ function Navbar() {
           <div className="pride_logo">
             <img src={pridelogo} alt="logo" className="logo" />
           </div>
-          <button>
-            <a href="../../../public/index.html" className="pride_links">EVENTS</a>
-          </button>
-          <button>
-            <a href="../../../public/index.html" className="pride_links">CONSULTANCY</a>
-          </button>
-          <button>
-            <a href="../../../public/index.html" className="pride_links"> PROJECTS</a>
-          </button>
-          <div
-            onMouseEnter={() =>{
-              document.querySelector('.courses').style.display='grid';
-            }}
-            onMouseLeave={() => {
-              document.querySelector('.courses').style.display='none';
-            }}
-            className="courses_container"
-          >
-            <button 
-            className="pride_links openlink"
-            >
-              COURSES
-            </button>
-            <div className="courses">
-              <a href="../../../public/index.html" className="course_list">COURSE LIST</a>
-              <a href="../../../public/index.html" className="registration">REGISTRATION</a>
-              <a href="../../../public/index.html" className="course_list">MOU</a>
-            </div>
-          </div>
           <div 
             onMouseEnter={() =>{
               document.querySelector('.about_us').style.display='grid';
@@ -78,6 +49,35 @@ function Navbar() {
             <a href="../../../public/index.html" className="course_list">COMMITTEE</a>
           </div>
         </div>
+          <div
+            onMouseEnter={() =>{
+              document.querySelector('.courses').style.display='grid';
+            }}
+            onMouseLeave={() => {
+              document.querySelector('.courses').style.display='none';
+            }}
+            className="courses_container"
+          >
+            <button 
+            className="pride_links openlink"
+            >
+              COURSES
+            </button>
+            <div className="courses">
+              <a href="../../../public/index.html" className="course_list">COURSE LIST</a>
+              <a href="../../../public/index.html" className="registration">REGISTRATION</a>
+              <a href="../../../public/index.html" className="course_list">MOU</a>
+            </div>
+          </div>
+          <button>
+            <a href="../../../public/index.html" className="pride_links">EVENTS</a>
+          </button>
+          <button>
+            <a href="../../../public/index.html" className="pride_links">INNOVATIVE PROJECTS</a>
+          </button>
+          <button>
+            <a href="../../../public/index.html" className="pride_links">CONSULTANCY</a>
+          </button>
       </div>  
     </div>
     <div className="navright">
